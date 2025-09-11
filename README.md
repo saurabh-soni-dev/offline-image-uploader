@@ -56,15 +56,16 @@ Server runs at: http://localhost:3000
 POST /upload → Uploads image + metadata
 GET /list → Returns all uploaded items
 
-Client Setup:
+## Client Setup:
+```bash
 cd client
 npm install
 npm run start
 
 npm run android
-# or
+or
 npm run ios
-
+```
 
 ## 📱 React Native Client (Key Decisions):
 - AsyncStorage → Store images & metadata locally while offline
@@ -78,8 +79,8 @@ npm run ios
 - Stores images in the/uploads folder
 - Handles multipart/form-data via Multer
 
-🔮 Possible Enhancements:
-User authentication
-Image compression before upload
-Background sync with retry logic
-Cloud storage integration (AWS S3, Firebase Storage)
+## 🔮 Possible Enhancements:
+- User authentication
+- Image compression before upload
+- Background sync with retry logic
+- Cloud storage integration (AWS S3, Firebase Storage)
