@@ -1,9 +1,9 @@
-# 📷 Offline Image Uploader — React Native & Node.js
+# Offline Image Uploader — React Native & Node.js
 
 This project showcases an **offline-first React Native app** that enables users to capture or select images, add captions, and view them offline. When online, the app syncs images and metadata with a minimal Node.js server, making them available across devices.
 
 
-## 🚀 Features
+## Features
 - Take or pick a photo from the gallery  
 - Save with a short caption  
 - Fully offline support (capture, save, view without internet)  
@@ -13,7 +13,7 @@ This project showcases an **offline-first React Native app** that enables users 
 - FlatList optimization for smooth rendering  
 
 
-## 📂 Project Structure
+## Project Structure
 offline-image-uploader/
 │── client/
 │ ├── App.tsx
@@ -32,9 +32,7 @@ offline-image-uploader/
 │
 └── README.md
 
----
-
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### Clone Repo
 ```bash
@@ -67,19 +65,19 @@ or
 npm run ios
 ```
 
-## 📱 React Native Client (Key Decisions):
+## React Native Client (Key Decisions):
 - AsyncStorage → Store images & metadata locally while offline
 - UUID → Generate unique IDs for offline entries
 - NetInfo → Detect network status & trigger sync
 - FlatList → Optimized for performance
 - Conflict Handling → If the same image exists both locally & remotely, the version with the latest modifiedAt timestamp is kept
 
-## 🌐 Minimal Server
+## Minimal Server
 - Built with Express.js
 - Stores images in the/uploads folder
 - Handles multipart/form-data via Multer
 
-## 🔮 Possible Enhancements:
+## Possible Enhancements:
 - User authentication
 - Image compression before upload
 - Background sync with retry logic
