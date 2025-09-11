@@ -36,13 +36,13 @@ offline-image-uploader/
 
 ## 🛠 Setup Instructions
 
-### 1️⃣ Clone Repo
+### Clone Repo
 ```bash
 git clone https://github.com/your-username/offline-image-uploader.git
 cd offline-image-uploader
 ```
 
-## Server Setup
+# Server Setup
 ```bash
 cd server
 npm init -y
@@ -52,11 +52,11 @@ node index.js
 Server runs at: http://localhost:3000
 ```
 
-## APIs:
+# APIs:
 - POST /upload → Uploads image + metadata
 - GET /list → Returns all uploaded items
 
-## Client Setup:
+# Client Setup:
 ```bash
 cd client
 npm install
