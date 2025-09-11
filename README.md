@@ -2,7 +2,6 @@
 
 This project showcases an **offline-first React Native app** that enables users to capture or select images, add captions, and view them offline. When online, the app syncs images and metadata with a minimal Node.js server, making them available across devices.
 
----
 
 ## 🚀 Features
 - Take or pick a photo from the gallery  
@@ -13,7 +12,6 @@ This project showcases an **offline-first React Native app** that enables users 
 - Minimal Express server for uploads & listing images  
 - FlatList optimization for smooth rendering  
 
----
 
 ## 📂 Project Structure
 offline-image-uploader/
@@ -42,8 +40,10 @@ offline-image-uploader/
 ```bash
 git clone https://github.com/your-username/offline-image-uploader.git
 cd offline-image-uploader
+```
 
-Server Setup
+## Server Setup
+```bash
 cd server
 npm init -y
 npm install express multer cors
@@ -53,8 +53,8 @@ Server runs at: http://localhost:3000
 ```
 
 ## APIs:
-POST /upload → Uploads image + metadata
-GET /list → Returns all uploaded items
+- POST /upload → Uploads image + metadata
+- GET /list → Returns all uploaded items
 
 ## Client Setup:
 ```bash
